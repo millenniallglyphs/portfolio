@@ -1,7 +1,7 @@
 {
   "name": "simple-node-website",
   "version": "0.1.0",
-  "description": "A simple website built with Node, Express and Pug",
+  "description": "Portfolio Page",
   "main": "server.js",
   "scripts": {
     "start": "npx nodemon app.js"

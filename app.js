@@ -7,12 +7,31 @@ if (port == null || port == "") {
 }
 app.listen(port);
 
+app.set('view engine', 'pug');
+
+//index
 app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Xalgorithms'
+  res.render('pages/index', {
+    title: 'Calvin | Product Design'
   });
 });
 
-app.set('view engine', 'pug');
+//resume
+
+//p5.jssketch
+app.get('/sketch', (req, res) => {
+  res.render('pages/sketch', {
+    title: 'Calvin | sketch'
+  });
+});
+
+//botnet
+app.get('/botnet', (req, res) => {
+  res.render('pages/botnet', {
+    title: 'Calvin | Botnet'
+  });
+});
+
+
 
 app.use(express.static(__dirname + '/public'));

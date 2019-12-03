@@ -1,0 +1,167 @@
+doctype html
+
+html
+  header
+    include ../templates/head
+    
+  body
+      div#about
+      div#bannertop
+        div.contentwidth
+          div#bannerhold
+            div#bannercomp
+            div#bannervetalign
+              div.headline Calvin Hutcheon
+              div#headshot
+                img#headhello(src='/images/headshot.jpg')
+              .headline crafts products for 
+              #twoheadline 
+                .headline an 
+                  span#call animate
+                div#deffintion
+                  div#word Animate <span id="wordkind">NOUN</span>
+                  div#pronounce \ker\
+                  div
+                    div.defbox
+                      div.defsubnum 1.
+                      div.defsub A process of creation that includes the voices of those forgotten, include edge usecases.
+              .bottomheadline        
+                .headline world
+                .linebase
+                .button 
+                  div.bggrad
+                  div.bttntxt Read My Manifesto
+                #smallline
+              
+      div.variablehold  
+              
+        div.contentwidth#holdeleft
+          div#abouthor
+            div#abouthold
+              div#aboutheight
+              div#aboutme
+                h1.btitling Welcom to my Practice
+                p.bbody I’m a multidisciplinary creative and a steward for emergent product visions. I priovide leadership, do design,  <a>write about design</a> and <a>make things with code</a>. <br> <br> Currently, I am looking for work. When not applying for jobs, I am engaged in reserarching <a>Deanthropocentrification</a>, and <a>sustainable strategy</a>. I also make a point to contribute to free/libre/open source projects.  
+      
+        div#contentbg
+          div.contentwidth 
+                
+            mixin contened(title, call, team, time, roles, bodycopy, casestudy, featimg)
+              .contentbox
+                .faturedimg
+                  img.featdim(src=featimg)
+                .aboutproject
+                  .projectinfo
+                    h1.titling= title
+                    .linkcall
+                      img.projicon(src='/images/i-web.png')
+                      .site
+                        a.sitelink=call
+                  .projectnotes
+                    .greybox  
+                      img.projicon(src='/images/i-team.png')
+                      .team=team
+                    .greybox 
+                      img.projicon(src='/images/i-cal.png')
+                      .time=time
+                  .rolesbox
+                    .roles My Roles
+                    .rolelist=roles 
+                div.projectdesc
+                  p.body=bodycopy
+                div.caselink
+                  .casegrad
+                  .casetxt
+                    a.casea(href=casestudy) Read the casestudy
+                  
+                  
+                    
+            +contened(
+              'Epiphyte', 
+              'See the site', 
+              'just me', '3 months', 
+              'UI/UX Design, Development, Content Creation, Branding',
+              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+              '/botnet',
+              '/images/botshot.gif'
+              )
+              
+            +contened(
+              'Abacus', 
+              'See the site', 
+              'just me', '3 months', 
+              'UI/UX Design, Development, Content Creation, Branding',
+              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+              'link',
+              '/images/newdim_abacus_00.jpg'
+              )
+              
+            +contened(
+              'Bitclaims', 
+              'See the site', 
+              'just me', '3 months', 
+              'UI/UX Design, Development, Content Creation, Branding',
+              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+              'link',
+              '/images/newdim_bitclaims_04.gif'
+              )
+            
+            +contened(
+              'Botnet', 
+              'See the site', 
+              'just me', '3 months', 
+              'UI/UX Design, Development, Content Creation, Branding',
+              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+              'link',
+              '/images/newdim_botnet_00.jpg'
+              )
+              
+            +contened(
+              'Arthur', 
+              'See the site', 
+              'just me', '3 months', 
+              'UI/UX Design, Development, Content Creation, Branding',
+              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+              'link',
+              '/images/newdim_arthur_00.gif'              
+              )
+            
+            
+      div.contentwidthff
+        div#aboutgrid
+          div#counterpic
+            img(src='../images/compose.png')
+          div#aboutme
+            h1.titling I couldn't have done it alone
+            p.bbody A huge thanks to people who helped me along the way. I couldn’t have done this without your help. A special shoutout to: 
+            ul
+              li
+                a Caleb Miller
+              li    
+                a Alex Singh
+              li
+                a Tanvi Sharma
+              li  
+                a Kristian Bjornard
+              li  
+                a Max Griffin
+              li
+                a Is Levin
+              li
+                a Danny Varrailas
+              li  
+                a Steve Kistner
+              li  
+                a Joseph Potvin   
+      div.try
+        include ../templates/flame
+          
+      include ../templates/scripts
+          
+            
+            
+        
+              
+          
+
+              

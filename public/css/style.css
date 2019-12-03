@@ -9,581 +9,518 @@
 body {
     margin: 0 !important;
     padding: 0 !important;
+    font-size: 16px;
 }
 
-button {
-  font-size: 16px;
-  background: black;
+
+@font-face {
+  font-family: 'William_Caslon';
+  src: url(../fonts/WilliamsCaslonText-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Nocturno';
+  src: url(../fonts/NocturnoDisplayPro-Regular.woff);
+}
+
+@font-face {
+  font-family: 'CSTMX';
+  src: url(../fonts/CSTMXprmntl03_Medium.woff);
+}
+
+/*mobile first styling*/
+
+a {
+  color: #2E4DBA;
+  text-decoration: none;
+  font-family: 'William_Caslon', serif;
+}
+
+canvas {
+  position: relative;
+  z-index: -3 !important;
+}
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(10px);
+  z-index: 3;
+  pointer-events: none;
+}
+
+#bannertop {
+  background: #000000;
   color: white;
+}
+
+.contentwidth {
+  width: 90%;
+  margin: auto;
+}
+
+#headshot {
+  z-index: 2;
+  position: absolute;
+  margin-top: -7vw;
+  margin-left: 10vw;
+}
+
+#headhello {
+  width: 100px;
+}
+
+#bannerhold {
+  display: inline-flex;
+}
+
+#bannercomp {
+  height: 100vh;
+}
+
+#bannervetalign {
+  margin: auto;
+}
+
+#namecall {
+  font-family: 'William_Caslon', serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+#headlinehold {
+  display: inline-flex;
+}
+
+.headline {
+  font-family: 'Nocturno', serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+#twoheadline {
+  display: flex;
+  align-items: center;
+}
+
+#call {
+  font-family: 'CSTMX', serif;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+#deffintion>div {
+  font-family: 'William_Caslon', serif;
+  margin-bottom: 1rem;
+}
+
+#deffintion {
+  width: 30vw;
+  padding-left: 2vw;
+}
+
+#wordkind {
+  font-size: 0.8rem;
+}
+
+#pronounce {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.defbox {
+  display: inline-flex;
+}
+
+.defbox>div {
+  font-family: 'William_Caslon', serif;
+}
+
+.defsubnum {
+  padding-right: 0.5rem;
+}
+
+.button {
+  font-family: 'Nocturno', serif;
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid white;
   border-radius: 30px;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-
+  width: 230px;
+  height: 3.4rem;
+  align-self: center;
 }
 
-/*navbar*/
+.bggrad {
+  width: 100%;
+  height: 3.4rem;
+  border-radius: 30px;
+}
 
-.navbar {
-  background: black;
-  padding: 12px;
-  position: fixed;
+.bttntxt {
+  position: relative;
+  top: -2.4rem;
+}
+
+.button:hover .bggrad {
+  background: linear-gradient(114.02deg, #78C0BB -15.02%, #A27E6E 62.75%, #5C9371 96.41%);
+  filter: blur(10px);
+}
+
+.button:hover{
+  border: none;
+}
+
+#aboutme {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.titling {
+  font-family: 'Nocturno', serif;
+  font-size: 1.5em;
+  margin-top: 0.4rem;
+  color: #ffffff;
+}
+
+.body {
+  font-family: 'William_Caslon', serif;
+  line-height: 1.8em;
+  color: #ffffff;
+}
+
+.btitling {
+  font-family: 'Nocturno', serif;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.bbody {
+  font-family: 'William_Caslon', serif;
+  line-height: 1.8em;
+  color: #000000;
+}
+
+/*project box*/
+
+#contentbg {
+  background: #000000;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.contentbox {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin-bottom: 2.5vw;
+  margin-top: 5vw;
+  max-width: 500px;
+  padding-bottom: 0.8rem;
+}
+
+.faturedimg {
+  margin: 0.6rem;
+}
+
+.featdim{
+  border-radius: 1rem;
   width: 100%;
 }
 
-#header-lockup {
-  height: 41px;
+.projectinfo {
+  display: flex;
+  align-items: baseline;
 }
 
-/*landing page cover*/
+.aboutproject {
+  padding: 0.6rem 1rem 0rem 1rem;
+  font-family: 'William_Caslon', serif;
+}
 
-#landing-row {
+.rolesbox {
   display: inline-grid;
-  grid-template-columns: 10% 90%;
-  width: 100%;
+  grid-template-columns: 60px auto;
 }
 
-#letter-mark {
-  height: 83px;
+.rolesbox>div {
+  font-family: 'William_Caslon', serif;
+  vertical-align: text-top;
 }
 
-#three-box {
-  margin: auto;
-  width: 100%;
+.roles {
+  color: #ffffff;
 }
 
-#head-align-right {
-  float: right;
+.rolelist {
+  text-transform: uppercase;
+  font-size: 12px;
+  vertical-align:text-bottom;
+  padding-top: 0.2rem;
+  padding-left: 0.4rem;
+  color: #C2C2C2;
+}
+
+.projectnotes {
+  padding-bottom: 0.6rem;
+}
+
+.projectnotes>div {
   display: inline-flex;
-  background: black;
-  color: white;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 100;
-  padding: 6px;
+  font-family: 'William_Caslon', serif;
 }
 
-.three-box-item {
-  padding-left: 18px;
-  padding-right: 18px;
-
+.projicon {
+  height: 0.8rem;
+  margin-right: 0.2rem;
+  width: auto;
 }
 
-#landingcover-width {
-  width: 80%;
-  margin: auto;
-}
-
-#landingcover-stock {
-  display: inline-flex;
-}
-
-#height-comp {
-  display: block;
-  height: 90vh;
-}
-
-#landingcover-horizontal {
-  display: block;
-  margin: auto;
-}
-
-#landing-lead {
-  font-size: 24px;
-  padding-bottom: 45px;
-  padding-top: 45px;
-}
-
-#landing-headline {
-  font-size: 50px;
-  font-weight: 100;
-}
-
-#landing-para {
-  font-size: 16px;
-  line-height: 28px;
-  padding-bottom: 45px;
-  padding-top: 45px;
-  width: 65%;
-}
-
-
-#try {
+.projectdesc {
+  margin: 0.6rem 0rem 0.6rem 1rem;
   color: black;
-  background: white;
-  border: 1px solid black;
 }
 
-/*variable sentence*/
-
-#user {
-  text-decoration: underline;
-  text-decoration-color: #BADDD6;
+.site {
+  margin-right: 0.6rem;
 }
 
-#action {
-  text-decoration: underline;
-  text-decoration-color: #E29892;
+.sitelink {
+  color: #85ABA2;
 }
 
-#outcome {
-  text-decoration: underline;
-  text-decoration-color: #AEC5F3;
+.team {
+  margin-right: 0.8rem;
 }
 
-#location {
-  text-decoration: underline;
-  text-decoration-color: #B9A2EA;
+.caselink {
+  margin: auto;
+  text-align: center;
+  width: 95%;
+  border-radius: 2rem;
+  border: 1px solid #ffffff;
+  height: 3rem;
 }
 
-/*content generic*/
+.caselink:hover {
+  border: none;
+}
+
+.caselink:hover .casegrad {
+  background: linear-gradient(132.04deg, #78C0BB -15.02%, #A27E6E 62.75%, #5C9371 96.41%);
+  filter: blur(10px);
+}
+
+.casegrad {
+  width: 100%;
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.casetxt {
+  position: relative;
+  top: -2.1rem;
+}
+
+.casea {
+  color: #ffffff;
+  font-family: sans-serif;
+}
 
 .greybox {
-  width: 100%;
-  background: #F9F9F8;
+
 }
 
-.two-col {
+.greybox>div {
+  font-family: 'William_Caslon', serif;
+  color: #ffffff;
+}
+
+.linkcall {
   display: inline-flex;
-}
-
-.feature-img {
-  width: 50vw;
-}
-
-.feat-img-width {
-  width: 50vw;
-}
-
-.paragraph {
-  margin: auto;
-}
-
-.para-width {
-  width: 80%;
-  margin: auto;
-}
-
-.para-content {
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.para-title {
-  font-size: 30px;
-  font-weight: 100;
-  padding-bottom: 45px;
-}
-
-/*Simpliy IOR Specific*/
-
-#iorgrid-hold {
-  width: 95%;
-  margin-top: 25px;
-  display: inline-grid;
-  grid-template-columns: 25% 50% 25%;
-  grid-column-gap: 8px;
-}
-
-.iorgrid-component {
-  border-left: 1px solid black;
-  padding-left: 18px;
-}
-
-.iorgrid-black {
-
-  font-size: 18px;
-  font-weight: 100;
-}
-
-.ior-subtext {
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 18px;
-  /*border-left: 1px solid black;*/
-}
-
-/*transmission of agency*/
-
-#transmission-width {
-  width: 80%;
-  margin: auto;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-}
-
-#agency-flex {
-  display: inline-grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 18px;
-  grid-row-gap: 18px;
-}
-
-.agency-comp {
-  padding-left: 20px;
-}
-
-#center {
-  text-align: center;
-}
-
-#para-center {
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-#agency-business {
-  border-left: 1px solid #E29892;
-  color: #DA554A;
-}
-
-#agency-government {
-  border-left: 1px solid #ADC5F3;
-  color: #587FCB;
-}
-
-#agency-technical {
-  border-left: 1px solid #BADDD6;
-  color: #23CCAA;
-}
-
-#agency-legal {
-  border-left: 1px solid #B9A1EA;
-  color: #815EC7;
-}
-
-#transmission-subwidth {
-  width: 80%;
-  margin: auto;
-}
-
-.agency-title {
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 15px;
-}
-
-/*computing fast*/
-
-#fast-grid {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-column-gap: 8px;
-  margin-bottom: 48px;
-}
-
-.fast-grid-item {
-  text-align: left;
-  padding-left: 18px;
-  border-left: 1px solid black;
-}
-
-#lined {
-
-}
-
-#appear {
-  display: none;
-}
-
-.fast-title {
-  font-size: 18px;
-  font-weight: 100;
-}
-
-.fast-subtitle {
-  margin-top: 8px;
-  font-size: 12px;
-}
-
-/*four documents*/
-
-#doctype-grid {
-  margin-bottom: 45px;
-}
-
-.doc-item {
-  display: inline-flex;
-  width: 90%;
-  margin-bottom: 3px;
-}
-
-.doc-icon {
-
-}
-
-.doc-icon-img {
-  width: 180px;
-}
-
-.doc-dscription {
-  margin: auto;
-  padding-bottom: 12px;
-  border-bottom: 1px solid black;
-  width: 90%;
-}
-
-.doc-subtutle {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.doc-title {
-  font-size: 18px;
-  font-weight: 100;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-#buffer-box {
-  width: 100%;
-  background: #F9F9F8;
-  height: 10vh;
-}
-
-/*diagram*/
-
-#center-img {
-  width: 80%;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
-
-.logic-img {
-  width: 99%;
-}
-
-/*free libre*/
-
-#split-open {
-  display: inline-flex;
-  margin-bottom: 48px;
-}
-
-.split-comp {
-  padding-left: 18px;
-  border-left: 1px solid black
-}
-
-.split-subtitle {
-  font-size: 12px;
-  line-height: 18px;
-  margin-top: 8px;
-}
-
-#open-source {
-
-}
-
-#contribute {
-  margin-top: 48px;
 }
 
 /*footer*/
 
-.footer-box {
-  width: 100%;
+.footer {
   background: black;
-  padding-bottom: 30vh;
-}
-
-.footer-grid {
-  width: 100%;
-  margin: auto;
-  padding-top: 5vh;
-  display: inline-grid;
-  grid-template-columns: 50% 25% 25%;
-  font-size: 12px;
-  line-height: 18px;
-  padding-left: 48px;
-  padding-right: 48px;
   color: white;
+  padding-bottom: 15vh;
 }
 
-.footer-grid > div {
-  padding-left: 8px;
+.foothold {
+  padding: 0.6rem;
+
 }
 
-#contact {
+.foothold>p {
+  font-family: 'William_Caslon', serif;
+  font-size: 0.8rem;
+}
+
+#combine {
+  width: 100%;
+}
+
+#composing {
+  width: 50vw;
+}
+
+/*footer*/
+
+.footerbox {
+  background-color: #000000;
+  font-family: 'William_Caslon', serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footerhold {
+  width: 95%;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footergrid {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto 200px;
+}
+
+.footerl {
+
+}
+
+.footerr {
   text-align: right;
-}
-
-#address {
   border-left: 1px solid white;
 }
 
-@media only screen and (max-width: 1200px) {
+.foottext {
+  font-family: 'William_Caslon', serif;
+}
 
-  .two-col {
-    display: block;
-  }
+.decentralized {
+  margin-bottom: 6rem;
+}
 
-  .feature-img {
-    width: 90%;
-    margin: auto;
-    padding-top: 10vh;
-    margin-bottom: 10vh;
-  }
+#days {
+  font-family: 'CSTMX', serif;
+  color: #ffffff;
+  font-size: 2.6rem;
+}
 
-  .feat-img-width {
-    width: 100%;
-  }
+.social {
+  margin-bottom: 10rem;
+}
 
-  .paragraph {
-    padding-bottom: 10vh;
-  }
-
-  #disp {
-    display: none;
-  }
-
-  #appear {
-    display: block;
-  }
-
-  #buffer-box {
-    display: none;
-  }
-
-  #nomarg {
-    padding-bottom: 0px;
-  }
-
-
-
+.social>svg {
+  margin: 0.6rem;
 }
 
 
-/*mobile view*/
-@media only screen and (max-width: 800px) {
+/*desktop*/
 
-  #landingcover-width {
-    width: 90%;
-    margin: auto;
+@media only screen and (min-width: 1000px) {
+
+  #namecall {
+    font-size: 1.2rem;
   }
 
+  .headline {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
 
-  #height-comp {
+  #call {
+    font-size: 10vw;
+  }
+
+  .bottomheadline {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .linebase {
+    border-bottom: 1px solid white;
+    width: 30%;
+    flex-shrink: 1;
+  }
+
+  #headhello {
+    width: 6vw;
+  }
+
+  #smallline {
+    border-bottom: 1px solid white;
+    flex-shrink: 1;
+    width: 8%;
+  }
+
+  .variablehold {
+    display: grid;
+    grid-template-columns: 45% auto;
+  }
+
+  #holdeleft {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
     display: block;
+    top: 0px;
+    margin: 0
+  }
+
+  #abouthor {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-left: 5%;
+  }
+
+  #abouthold {
+    display: inline-flex;
+  }
+
+  #aboutheight {
     height: 100vh;
   }
 
-  #three-box {
-    display: none;
-  }
-
-  #landingcover-horizontal {
-    width: 100%;
-  }
-
-  #landingcover-stock {
-    width: 100%;
-  }
-
-  #landing-para {
-    width: 100%;
-    padding-bottom: 4vh;
-    padding-top: 4vh;
-  }
-
-  #landing-headline {
-    font-size: 35px;
-  }
-
-  #landing-lead {
-    font-size: 20px;
-    padding-bottom: 4vh;
-    padding-top: 4vh;
-  }
-
-  #letter-mark {
-    height: 60px;
-  }
-
-  .para-width {
-    width: 90%;
+  #aboutme {
     margin: auto;
   }
 
-  .para-title {
-    font-size: 24px;
+  .contentbox {
+    margin: auto;
+    margin-bottom: 2.5vw;
+    margin-top: 5vw;
   }
 
-  #iorgrid-hold {
-    display: block;
+  #contentbg {
+
   }
 
-  .iorgrid-component {
-    padding-left: 0px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    border-bottom: 1px solid black;
-    border-left: none;
+  .contentwidth {
+
   }
 
+  #aboutgrid {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-bottom: -5px;
+  }
 
-  #transmission-subwidth {
+  .halfmast {
     width: 100%;
   }
-
-  #center {
-    text-align: left;
-  }
-
-  #para-center {
-    text-align: left;
-  }
-
-  #agency-flex {
-    display: block;
-  }
-
-  .footer-grid {
-    display: block;
-    width: 90%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .agency-comp {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-
-  .doc-item {
-    width: 100%;
-  }
-
-  .doc-dscription {
-    width: 100%;
-  }
-
-  #contact {
-    text-align: left;
-  }
-
-  #address {
-    border-left: none;
-  }
-
-  .footer-grid > div {
-    padding-left: 0px;
-    padding-top: 18px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid white;
-  }
-
-  .feat-img-width {
-    width: 100%;
-  }
-
-  #center-img {
-    width: 100%;
-  }
-
-
 
 }
