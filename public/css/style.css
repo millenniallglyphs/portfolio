@@ -48,7 +48,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(10px);
+  /*filter: blur(2px);*/
   z-index: 3;
   pointer-events: none;
 }
@@ -176,9 +176,34 @@ canvas {
   border: none;
 }
 
+#scrollbox {
+  display: block;
+  width: 100px;
+  align-self: center;
+}
+
+#downpic {
+  width: 30px;
+}
+
+#mousepic {
+  width: 30px;
+  margin: auto;
+  padding-bottom: 0.8rem;
+}
+
+#mouseword {
+  text-align: center;
+  font-family: 'William_Caslon', serif;
+  width: 100%;
+}
+
 #aboutme {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin: auto;
+}
+
+#thanks {
+  display: block;
 }
 
 .titling {
@@ -216,12 +241,11 @@ canvas {
 
 .contentbox {
   background: none;
-  border: 1px solid #ffffff;
-  border-radius: 20px;
+  border-left: 1px solid #ffffff;
   margin-bottom: 2.5vw;
   margin-top: 5vw;
   max-width: 500px;
-  padding-bottom: 0.8rem;
+  padding-left: 0.6rem;
 }
 
 .faturedimg {
@@ -342,7 +366,9 @@ canvas {
 }
 
 .linkcall {
-  display: inline-flex;
+  display: flex;
+  padding-left: 0.6rem;
+  align-items: center;
 }
 
 /*footer*/
@@ -417,11 +443,18 @@ canvas {
 }
 
 .social {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
   margin-bottom: 10rem;
 }
 
 .social>svg {
   margin: 0.6rem;
+}
+
+.try {
+  margin-top: -10px;
 }
 
 
@@ -445,7 +478,7 @@ canvas {
   .bottomheadline {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -480,22 +513,22 @@ canvas {
     margin: 0
   }
 
-  #abouthor {
+  .abouthor {
     display: block;
     width: 70%;
     margin: auto;
     padding-left: 5%;
   }
 
-  #abouthold {
+  .abouthold {
     display: inline-flex;
   }
 
-  #aboutheight {
+  .aboutheight {
     height: 100vh;
   }
 
-  #aboutme {
+  .aboutme {
     margin: auto;
   }
 
@@ -514,9 +547,7 @@ canvas {
   }
 
   #aboutgrid {
-    display: grid;
-    grid-template-columns: 50% auto;
-    margin-bottom: -5px;
+    display: inline-flex;
   }
 
   .halfmast {

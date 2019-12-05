@@ -32,14 +32,18 @@ html
                   div.bggrad
                   div.bttntxt Read My Manifesto
                 #smallline
+                #scrollbox
+                  #mousepic
+                    img#downpic(src='/images/i-mousedown.png')
+                  #mouseword or scroll down
               
       div.variablehold  
               
         div.contentwidth#holdeleft
-          div#abouthor
-            div#abouthold
-              div#aboutheight
-              div#aboutme
+          div.abouthor
+            div.abouthold
+              div.aboutheight
+              div.aboutme
                 h1.btitling Welcom to my Practice
                 p.bbody I’m a multidisciplinary creative and a steward for emergent product visions. I priovide leadership, do design,  <a>write about design</a> and <a>make things with code</a>. <br> <br> Currently, I am looking for work. When not applying for jobs, I am engaged in reserarching <a>Deanthropocentrification</a>, and <a>sustainable strategy</a>. I also make a point to contribute to free/libre/open source projects.  
       
@@ -130,29 +134,32 @@ html
       div.contentwidthff
         div#aboutgrid
           div#counterpic
-            img(src='../images/compose.png')
+            img#composing(src='../images/compose.png')
           div#aboutme
-            h1.titling I couldn't have done it alone
-            p.bbody A huge thanks to people who helped me along the way. I couldn’t have done this without your help. A special shoutout to: 
-            ul
-              li
-                a Caleb Miller
-              li    
-                a Alex Singh
-              li
-                a Tanvi Sharma
-              li  
-                a Kristian Bjornard
-              li  
-                a Max Griffin
-              li
-                a Is Levin
-              li
-                a Danny Varrailas
-              li  
-                a Steve Kistner
-              li  
-                a Joseph Potvin   
+            div.abouthor
+              div.abouthold
+                div#thanks
+                  h1.btitling I couldn't have done it alone
+                  p.bbody A huge thanks to people who helped me along the way. I couldn’t have done this without your help. A special shoutout to: 
+                  ul
+                    li
+                      a Caleb Miller
+                    li    
+                      a Alex Singh
+                    li
+                      a Tanvi Sharma
+                    li  
+                      a Kristian Bjornard
+                    li  
+                      a Max Griffin
+                    li
+                      a Is Levin
+                    li
+                      a Danny Varrailas
+                    li  
+                      a Steve Kistner
+                    li  
+                      a Joseph Potvin   
       div.try
         include ../templates/flame
           

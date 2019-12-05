@@ -1,0 +1,37 @@
+html
+  header
+    include ../templates/head
+    
+  body
+    include ../templates/projhead
+    +featheadtop(
+      "../images/botnet/botnetphoto00.jpg",
+      "Epiphyte"
+      )
+      
+    .projbg
+      include ../templates/projright
+      +projright(
+        "Starting in Research",
+        "Investigating cybernetic threads within blockchain projects, I examine a collection of hybrid digital/biological systems. In my paper I explore what these represent today, in the face of network capitalism and climate change.",
+        "../images/epiphyte/epi_paper.jpg"
+        )
+      
+    include ../templates/projleft
+    +projleft(
+      "../images/epiphyte/epiensemwhite.gif",
+      "Taking Form",
+      "From the start, I was interested in a creating a bot that could be placed as an observation station, monitoring a lichen or moss sample in real time. I coded the tradebot in python, using Open CV libraries for much of the computer vision work and Intrino for my trade API. While the code is quite rudimentary, it represents a proof of concept. I hope to collaborate with developers in the future to create a more robust code base."
+      )
+      
+    +projright(
+      "Exhibition",
+      "Investigating cybernetic threads within blockchain projects, I examine a collection of hybrid digital/biological systems. In my paper I explore what these represent today, in the face of network capitalism and climate change.",
+      "../images/epiphyte/epi_show01.jpg"
+      )
+      
+    +projleft(
+      "../images/epiphyte/epiensemwhite.gif",
+      "Taking Form",
+      "From the start, I was interested in a creating a bot that could be placed as an observation station, monitoring a lichen or moss sample in real time. I coded the tradebot in python, using Open CV libraries for much of the computer vision work and Intrino for my trade API. While the code is quite rudimentary, it represents a proof of concept. I hope to collaborate with developers in the future to create a more robust code base."
+      )

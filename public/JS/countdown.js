@@ -1,4 +1,4 @@
-//this is a climate countdown, showing the days remaining in the 12 year timeline
+//this is a climate countdown, showing the days remaining in the 12 year survival timeline
 
 var countDownDate = new Date("Oct 1, 2030 12:00:00").getTime();
 

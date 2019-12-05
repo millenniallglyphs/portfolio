@@ -32,6 +32,19 @@ app.get('/botnet', (req, res) => {
   });
 });
 
+//botnet
+app.get('/abacus', (req, res) => {
+  res.render('pages/abacus', {
+    title: 'Calvin | Abacus'
+  });
+});
+
+app.get('/epiphyte', (req, res) => {
+  res.render('pages/epiphyte', {
+    title: 'Calvin | Epiphyte'
+  });
+});
+
 
 
 app.use(express.static(__dirname + '/public'));

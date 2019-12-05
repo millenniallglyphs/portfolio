@@ -5,7 +5,6 @@ function setup() {
   createCanvas(800, 1000);
   noLoop();
   noStroke();
-  fill(255, 204);
   var clientHeight = document.getElementById('about').clientHeight;
 	var clientWidth = document.getElementById('about').clientWidth;
 
@@ -46,39 +45,80 @@ function draw() {
   let y = cos(c);
   let q = cos(d);
 
-    fill(255);
+
     /*fill(120, 192, 187);*/
     push();
+    fill(255);
     rotate(z);
-    rect(a, b, 200, 40);
+    star(a, b, 5, 70, 3);
     pop();
 
     push();
+    fill(255);
     rotate(x);
-    rect(c, d, 200, 40);
+    star(c, d, 5, 70, 3);
     pop();
 
     push();
+    fill(255);
     rotate(y);
-    rect(e, f, 200, 40);
+    star(e, f, 5, 70, 3);
     pop();
 
     push();
+    fill(255);
     rotate(q);
-    rect(g, h, 200, 40);
+    star(g, h, 5, 170, 3);
     pop();
 
     push();
-    rotate(x);
-    rect(i, j, 200, 40);
+    fill(255);
+    rotate(x-z);
+    star(i, j, 5, 70, 4);
     pop();
 
     push();
-    rotate(z);
-    rect(k, l, 200, 40);
+    fill(255);
+    rotate(z-x);
+    star(k, l, 5, 170, 4);
     pop();
 
+    push();
+    fill(255);
+    rotate(-z);
+    star(b, a, 5, 70, 4);
+    pop();
+
+    push();
+    fill(255);
+    rotate(-x);
+    star(d, c, 5, 70, 4);
+    pop();
+
+/*
+    push();
+    stroke(255);
+    strokeWeight(10);
+    noFill();
+    ellipse(e, a, d);
+    pop();
+*/
 
 
 
+}
+
+function star(x, y, radius1, radius2, npoints) {
+  let angle = TWO_PI / npoints;
+  let halfAngle = angle / 2.0;
+  beginShape();
+  for (let a = 0; a < TWO_PI; a += angle) {
+    let sx = x + cos(a) * radius2;
+    let sy = y + sin(a) * radius2;
+    vertex(sx, sy);
+    sx = x + cos(a + halfAngle) * radius1;
+    sy = y + sin(a + halfAngle) * radius1;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
 }
