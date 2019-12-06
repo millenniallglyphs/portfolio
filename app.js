@@ -39,12 +39,18 @@ app.get('/abacus', (req, res) => {
   });
 });
 
+//epiphyte
 app.get('/epiphyte', (req, res) => {
   res.render('pages/epiphyte', {
     title: 'Calvin | Epiphyte'
   });
 });
 
-
+//bitclaims
+app.get('/bitclaims', (req, res) => {
+  res.render('pages/bitclaims', {
+    title: 'Calvin | Bitclaims'
+  });
+});
 
 app.use(express.static(__dirname + '/public'));

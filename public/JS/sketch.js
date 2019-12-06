@@ -28,8 +28,8 @@ function draw() {
   let f = random(1200);
   let g = random(800);
   let h = random(1200);
-  let i = random(800);
-  let j = random(1200);
+  let i = random(600);
+  let j = random(800);
   let k = random(800);
   let l = random(1200);
 
@@ -47,36 +47,43 @@ function draw() {
 
 
     /*fill(120, 192, 187);*/
+    /*
     push();
     fill(255);
     rotate(z);
-    star(a, b, 5, 70, 3);
+    rect(a, b, 40, 200);
     pop();
 
     push();
     fill(255);
     rotate(x);
-    star(c, d, 5, 70, 3);
+    rect(c, d, 40, 200);
     pop();
 
     push();
     fill(255);
     rotate(y);
-    star(e, f, 5, 70, 3);
+    rect(e, f, 40, 200);
     pop();
-
+*/
     push();
     fill(255);
     rotate(q);
     star(g, h, 5, 170, 3);
     pop();
+/*
+    push();
+    fill(255);
+    rotate(x-z);
+    rect(i, j, 40, 200);
+    pop();
 
     push();
     fill(255);
     rotate(x-z);
-    star(i, j, 5, 70, 4);
+    rect(j, i, 2000, 2000);
     pop();
-
+*/
     push();
     fill(255);
     rotate(z-x);

@@ -12,6 +12,10 @@ body {
     font-size: 16px;
 }
 
+html {
+  background: #FEFEFE;
+}
+
 
 @font-face {
   font-family: 'William_Caslon';
@@ -26,6 +30,23 @@ body {
 @font-face {
   font-family: 'CSTMX';
   src: url(../fonts/CSTMXprmntl03_Medium.woff);
+}
+
+/*navbar*/
+
+.navbar {
+  position: fixed;
+  padding: 15px;
+  padding-left: 17.5px;
+  background: none;
+  width: 100%;
+  z-index: 5;
+  mix-blend-mode: difference;
+}
+
+
+.vesselimg {
+  width: 100px;
 }
 
 /*mobile first styling*/
@@ -51,6 +72,7 @@ canvas {
   /*filter: blur(2px);*/
   z-index: 3;
   pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 #bannertop {
@@ -457,6 +479,10 @@ canvas {
   margin-top: -10px;
 }
 
+.helplist {
+  list-style-type: none;
+}
+
 
 /*desktop*/
 
@@ -468,7 +494,7 @@ canvas {
 
   .headline {
     font-size: 10vw;
-    line-height: 10vw;
+    line-height: 8vw;
   }
 
   #call {
