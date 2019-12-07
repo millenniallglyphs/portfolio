@@ -38,10 +38,10 @@ html {
   position: fixed;
   padding: 15px;
   padding-left: 17.5px;
-  background: none;
-  width: 100%;
+  background: #000000;
+  width: 80px;
   z-index: 5;
-  mix-blend-mode: difference;
+
 }
 
 
@@ -537,6 +537,18 @@ mobilefooter {
   display: block;
 }
 
+#navimg {
+  width: 45px;
+}
+
+.iconbip {
+  width: 70px;
+}
+
+#crucible {
+  width: 50px;
+}
+
 /*desktop*/
 
 @media only screen and (min-width: 1000px) {
@@ -601,7 +613,8 @@ mobilefooter {
 
   .abouthold {
     display: inline-flex;
-    margin: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .aboutheight {
@@ -669,6 +682,10 @@ mobilefooter {
 
   mobilefooter {
     display: none;
+  }
+
+  #composing {
+    width: 50vw;
   }
 
 }
