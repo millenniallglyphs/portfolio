@@ -11,7 +11,7 @@ html
       )
     
     .projbg
-      .spacer
+      .spacer.hide
       include ../templates/projleft
       +projleft(
         "../images/botnet/botpic03.jpg",
@@ -22,11 +22,11 @@ html
           .casegrad
           .projtxt
             a.proja(href="") Read the Casestudy
-      .spacer  
+      .spacer.hide  
       .centerhighlight
         h3.projtitle Agora of Brand
         p.projwords For the project, I created an experimental brand for the botnet. The first brand principal, default typeface, is easily put into practice. All that’s needed is to type the word botnet in a default monospace. Next is the grid. The grid is applied dimensionally, determined by the window width, or size of printed collateral. The grid is a reference to pixels, but moreover, it establishes a sense of network control. Naturally the grid leads into the data structure. This is the final component of the brand. Like the botnet itself, this cannot be seen directly, but it is felt within the brand.
-        .spacer
+        .spacer.hide
       .projbg
         #nuebox
           #botgridc
@@ -43,15 +43,15 @@ html
                       a.proja(href="") See the Code
           #anotherbox
             #octgrid
-              div
-              div
+              div.hide
+              div.showstill
                 img.octgriddim(src="../images/botnet/botnetposter00.jpg")
-              div
-              div
+              div.hide
+              div.showstill
                 img.octgriddim(src="../images/botnet/botnetposter02.jpg")
-              div
+              div.hide
       
-    .spacer
+    .spacer.hide
     include ../templates/projright
     
     +projright(
@@ -60,7 +60,7 @@ html
     '../images/botnet/botnet.gif'
     )
     
-    .spacer  
+    .spacer.hide  
     +projleft(
       "../images/botnet/BOTPIC.jpg",
       "Building an Archive",
@@ -72,5 +72,6 @@ html
           a.proja(href="") Read the Casestudy
     
     include ../templates/flame
+    include ../templates/mobilefooter
               
               

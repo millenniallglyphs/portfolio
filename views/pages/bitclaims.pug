@@ -31,7 +31,7 @@ html
       "Constraints",
       "However, we had to consult with business design and the development team to determine the appropriate platform for the product. Ultimately, after considering development costs and with pressure to release a minimum viable product, it was determined we would build a mobile first web app."       
       )
-    .spacer
+    .spacer.hide
      
     include ../templates/projright
     .projbg
@@ -41,7 +41,7 @@ html
         "../images/bitclaims/newdim_arthure_02.jpg"       
         )
       
-    .spacer
+    .spacer.hide
   
     .projleftgrid
       .projpic
@@ -53,7 +53,7 @@ html
             h3.projtitle Building Out
             p.projwords Thus began a process of uncovering initial interaction. From there we began to sketch low fidelity wireframes. Through this process we refined the search and price discovery user flow. We developed a number of key features during this process.
 
-    .spacer
+    .spacer.hide
     +projright(
       "Understanding Our Users",
       "With clear consensus, the team conducted a workshop to develop user personas that would guide the design process. Gathering stake holders we began to refine who key users might be and what their specific needs would look like.",
@@ -68,7 +68,7 @@ html
         #comphold
           .atom 
             img.atomhold(src="../images/bitclaims/Group 9.png")
-          .atom
+          .atom#lift
             img.atomhold(src="../images/bitclaims/Group 8.png")
               
   
@@ -78,7 +78,7 @@ html
       "Interaction",
       "Thus began a process of uncovering initial interaction. From there we began to sketch low fidelity wireframes. Through this process we refined the search and price discovery user flow. We developed a number of key features during this process"       
       )
-    .spacer
+    .spacer.hide
     .projbg 
       +projright(
         "Understanding Our Users",
@@ -88,3 +88,4 @@ html
       
   
     include ../templates/flame
+    include ../templates/mobilefooter

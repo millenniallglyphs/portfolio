@@ -85,17 +85,6 @@ canvas {
   margin: auto;
 }
 
-#headshot {
-  z-index: 2;
-  position: absolute;
-  margin-top: -7vw;
-  margin-left: 10vw;
-}
-
-#headhello {
-  width: 100px;
-}
-
 #bannerhold {
   display: inline-flex;
 }
@@ -132,7 +121,7 @@ canvas {
 
 #call {
   font-family: 'CSTMX', serif;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   margin: auto;
 }
 
@@ -199,9 +188,7 @@ canvas {
 }
 
 #scrollbox {
-  display: block;
-  width: 100px;
-  align-self: center;
+  display: none;
 }
 
 #downpic {
@@ -221,6 +208,7 @@ canvas {
 }
 
 #aboutme {
+  width: 90%;
   margin: auto;
 }
 
@@ -416,7 +404,7 @@ canvas {
 }
 
 #composing {
-  width: 50vw;
+  width: 100%;
 }
 
 /*footer*/
@@ -455,7 +443,7 @@ canvas {
 }
 
 .decentralized {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 #days {
@@ -468,7 +456,7 @@ canvas {
   display: flex;
   align-content: center;
   justify-content: flex-end;
-  margin-bottom: 10rem;
+  margin-bottom: 0;
 }
 
 .social>svg {
@@ -483,6 +471,71 @@ canvas {
   list-style-type: none;
 }
 
+#headshot {
+  margin-top: -123px;
+  margin-left: 15px;
+  z-index: 2;
+  position: absolute;
+}
+
+#headhello {
+  width: 60px;
+}
+
+#deffintion {
+  display: none;
+}
+
+.abouthold {
+  display: inline-flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+flame {
+  display: none;
+}
+
+/*mobile footer*/
+
+.mobilebox {
+  background: #000000;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.mobilerowa {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mobilefootcon {
+  width: 90%;
+  margin: auto;
+}
+
+.mobilerowb {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid#ffffff;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#daymobile {
+  font-family: 'CSTMX', serif;
+  color: #ffffff;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.mobilerowc {
+  padding-bottom: 4rem;
+}
+
+mobilefooter {
+  display: block;
+}
 
 /*desktop*/
 
@@ -548,6 +601,7 @@ canvas {
 
   .abouthold {
     display: inline-flex;
+    margin: none;
   }
 
   .aboutheight {
@@ -555,6 +609,7 @@ canvas {
   }
 
   .aboutme {
+    width: 100%;
     margin: auto;
   }
 
@@ -578,6 +633,42 @@ canvas {
 
   .halfmast {
     width: 100%;
+  }
+
+  #headshot {
+    z-index: 2;
+    position: absolute;
+    margin-top: -7vw;
+    margin-left: 10vw;
+  }
+
+  #headhello {
+    width: 100px;
+  }
+
+  #scrollbox {
+    display: block;
+    width: 100px;
+    align-self: center;
+  }
+
+  flame {
+    display: block;
+  }
+
+  .social {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin-bottom: 10rem;
+  }
+
+  .decentralized {
+    margin-bottom: 6rem;
+  }
+
+  mobilefooter {
+    display: none;
   }
 
 }

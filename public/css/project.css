@@ -147,6 +147,10 @@ html {
   grid-template-columns: 25% 30% 7.5% 30% 7.5%;
 }
 
+#octgrid >div {
+  display: block;
+}
+
 .octgriddim {
   width: 100%;
 }
@@ -349,7 +353,8 @@ html {
 }
 
 .atomhold {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 5px;
 }
 
@@ -362,4 +367,102 @@ html {
 #constain {
   width: 75%;
   margin: auto;
+}
+
+.hide {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projleftgrid {
+    display: block;
+  }
+
+  .projrightgrid {
+    display: block;
+  }
+
+  .projpicdim {
+    width: 100%;
+  }
+
+  .projpar {
+    width: 90%;
+  }
+
+  .projparhold {
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+  }
+
+  #quotetime {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .threefold {
+    display: block;
+  }
+
+  .centerhighlight {
+    padding-bottom: 5vh;
+    width: 90%;
+  }
+
+  #economy {
+    padding-top: 0vh;
+    padding-bottom: 7.5vh;
+  }
+
+  .threefold >div {
+    margin:auto;
+    margin-top: 1rem;
+  }
+
+  #alittlemore {
+    margin-top: 7.5vh;
+    margin-bottom: 0vh;
+  }
+
+  #specialgrid {
+    display: block;
+  }
+
+  #specialcomp {
+    display: none;
+  }
+
+  #timerhold {
+    padding-top: 1vh;
+    padding-bottom: 7.5vh;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #comphold {
+    display: block;
+  }
+
+  #lift {
+    position: relative;
+    margin-top: -120px;
+  }
+
+  #botgridc {
+    display: block;
+  }
+
+  #octgrid {
+    grid-template-columns: 50% 50%;
+  }
+
+  #octgrid >div.hide {
+    display: none;
+  }
+
+  .showstill {
+    display: block;
+  }
 }

@@ -15,4 +15,5 @@ var x = setInterval(function() {
   var days = Math.floor(distance / (86400000));
 
   document.getElementById("days").innerHTML = days;
+  document.getElementById("daymobile").innerHTML = days;
 }, 1000);
