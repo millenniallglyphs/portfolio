@@ -38,16 +38,21 @@ html {
   position: fixed;
   padding: 15px;
   padding-left: 17.5px;
-  background: #000000;
   width: 80px;
   z-index: 5;
 
 }
 
+.navbar:hover {
+  filter: hue-rotate(90deg);
+}
+
+
 
 .vesselimg {
   width: 100px;
 }
+
 
 /*mobile first styling*/
 
@@ -133,6 +138,7 @@ canvas {
 #deffintion {
   width: 30vw;
   padding-left: 2vw;
+  display: block;
 }
 
 #wordkind {
@@ -549,6 +555,24 @@ mobilefooter {
   width: 50px;
 }
 
+.bottomhold {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twostones {
+  padding-right: 0.6rem;
+}
+
+.thankyouhold {
+  display: flex;
+}
+
+.thankscol {
+  margin-right: 6rem;
+}
+
 /*desktop*/
 
 @media only screen and (min-width: 1000px) {
@@ -686,6 +710,12 @@ mobilefooter {
 
   #composing {
     width: 50vw;
+  }
+
+  #deffintion {
+    width: 30vw;
+    padding-left: 2vw;
+    display: block;
   }
 
 }

@@ -45,7 +45,6 @@ html
             div.abouthold
               div.aboutheight
               div.aboutme
-                img.iconbip(src="../images/bars.png")
                 h1.btitling Welcom to my Practice
                 p.bbody I’m a multidisciplinary creative and a steward for emergent product visions. I design, <a href="https://medium.com/@millennialglyph">write about design</a>, <a href="https://github.com/millenniallglyphs">build with code</a> and facilitate teams.   
                 p.bbody I get excited about monetary systems, ecologies and their intersections. Contributing to open source projects is an important part of my practice.
@@ -110,7 +109,7 @@ html
               'UI/UX Design, Development, Content Creation, Branding',
               'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
               '/bitclaims',
-              '/images/newdim_bitclaims_04.gif'
+              '/images/bitclaims/newdim_bitclaims_04.gif'
               )
             
             +contened(
@@ -122,16 +121,16 @@ html
               '/botnet',
               '/images/newdim_botnet_00.jpg'
               )
-              
-            +contened(
-              'Arthur', 
-              'See the site', 
-              'just me', '3 months', 
-              'UI/UX Design, Development, Content Creation, Branding',
-              'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
-              'link',
-              '/images/newdim_arthur_00.gif'              
-              )
+            //  
+              +contened(
+                'Arthur', 
+                'See the site', 
+                'just me', '3 months', 
+                'UI/UX Design, Development, Content Creation, Branding',
+                'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
+                'link',
+                '/images/newdim_arthur_00.gif'              
+                )
             
             
       div.contentwidthff
@@ -142,27 +141,28 @@ html
             div.abouthor
               div.abouthold
                 div#thanks
-                  img.iconbip#crucible(src="../images/crucible.png")
                   h1.btitling I couldn't have done it alone
                   p.bbody A huge thanks to people who helped me along the way. I couldn’t have done this without your help. A special shoutout to: 
                   p.bbody
-                    a Caleb Miller
-                    br   
-                    a Alex Singh
-                    br 
-                    a Tanvi Sharma 
-                    br 
-                    a Kristian Bjornard
-                    br 
-                    a Max Griffin
-                    br 
-                    a Is Levin
-                    br 
-                    a Danny Varrailas 
-                    br 
-                    a Steve Kistner 
-                    br 
-                    a Joseph Potvin   
+                  .thankyouhold
+                    .thankscol
+                      a(href="https://caleb.world/") Caleb Miller
+                      br   
+                      a(href="https://www.alexsingh.com/") Alex Singh
+                      br 
+                      a(href="") Tanvi Sharma 
+                      br 
+                      a(href="http://kristian.bjornard.com/") Kristian Bjornard
+                    .thankscol
+                      a(href="https://www.maximiliandesign.me/") Max Griffin
+                      br 
+                      a(href="") Is Levin
+                      br 
+                      a(href="") Danny Varrailas 
+                      br 
+                      a(href="https://realsteve.onuniverse.com/") Steve Kistner 
+                      br 
+                      a(href="") Joseph Potvin   
       div.try
         include ../templates/flame
         include ../templates/mobilefooter
