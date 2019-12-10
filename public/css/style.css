@@ -606,6 +606,10 @@ mobilefooter {
   align-items: baseline;
 }
 
+.littlepad {
+  padding: 0.6rem;
+}
+
 /*desktop*/
 
 @media only screen and (min-width: 1000px) {
