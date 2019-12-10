@@ -1,20 +1,11 @@
-const express = require('express');
+var express = require('express');
+var path = require('path');
 var favicon = require('serve-favicon');
-var path = require('path')
-const app = express();
+var app = express();
 
-
-
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
-
-app.set('view engine', 'pug');
 
 //favicon
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 //index
 app.get('/', (req, res) => {
@@ -61,3 +52,11 @@ app.get('/bitclaims', (req, res) => {
 });
 
 app.use(express.static(__dirname + '/public'));
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
+app.set('view engine', 'pug');
