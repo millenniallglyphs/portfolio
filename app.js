@@ -2,11 +2,9 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 
-var sslRedirect = require('heroku-ssl-redirect');
-
 var app = express();
 
-app.use(sslRedirect());
+
 
 //favicon
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
