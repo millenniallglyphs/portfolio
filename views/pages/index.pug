@@ -44,7 +44,8 @@ html
                 .linebase
                 .button 
                   div.bggrad
-                  div.bttntxt Read My Manifesto
+                  div.bttntxt 
+                    a.casea(href="https://medium.com/@millennialglyph/product-design-for-an-animate-world-d8a3b512fb38" target="blank")  Design for the Animate 
                 #smallline
                 #scrollbox
                   #mousepic
@@ -64,17 +65,18 @@ html
         div#contentbg
           div.contentwidth 
                 
-            mixin contened(title, call, team, time, roles, bodycopy, casestudy, featimg)
+            mixin contened(title, team, time, roles, bodycopy, casestudy, featimg)
               .contentbox
                 .faturedimg
                   img.featdim(src=featimg)
                 .aboutproject
                   .projectinfo
                     h1.titling= title
-                    .linkcall
-                      img.projicon(src='/images/i-web.png')
-                      .site
-                        a.sitelink=call
+                    //
+                      .linkcall
+                        img.projicon(src='/images/i-web.png')
+                        .site
+                          a.sitelink=call
                   .projectnotes
                     .greybox  
                       img.projicon(src='/images/i-team.png')
@@ -96,7 +98,6 @@ html
                     
             +contened(
               'Epiphyte', 
-              'See the site', 
               'just me', '3 months', 
               'UI/UX, Programming, Content Creation, Branding, Production, research',
               'Epiphyte is a tradebot using lichen and moss as computational black boxes to connect ecology and finance',
@@ -105,8 +106,7 @@ html
               )
               
             +contened(
-              'Abacus', 
-              'See the site', 
+              'Abacus',
               'just me', '3 months', 
               'UI/UX, Programming, Branding, Production',
               'Responding to the recent UN climate report, I prototyped ways of accounting for the remaining time. ',
@@ -115,8 +115,7 @@ html
               )
               
             +contened(
-              'Bitclaims', 
-              'See the site', 
+              'Bitclaims',  
               '6 people', '3 months', 
               'UI/UX, Research, Prototyping, Wireframing, Interaction, Dev Hand off',
               'BitClaims used blockchain technology to build price transparency within the primary care market.',
@@ -126,7 +125,6 @@ html
             
             +contened(
               'Botnet', 
-              'See the site', 
               'just me', '3 months', 
               'Branding, Programming, Research, Generative design',
               'Exploring ways of visualizing the infrastructure of the botnet, I created generative posters and more',
@@ -135,8 +133,7 @@ html
               )
             //  
               +contened(
-                'Arthur', 
-                'See the site', 
+                'Arthur',  
                 'just me', '3 months', 
                 'UI/UX Design, Development, Content Creation, Branding',
                 'Epiphyte is a prototype for a new kind of economy, that uses living sensors to account for the externalities of industry.',
@@ -158,21 +155,21 @@ html
                   p.bbody
                   .thankyouhold
                     .thankscol
-                      a(href="https://caleb.world/") Caleb Miller
+                      a(href="https://caleb.world/" target="blank") Caleb Miller
                       br   
-                      a(href="https://www.alexsingh.com/") Alex Singh
+                      a(href="https://www.alexsingh.com/" target="blank") Alex Singh
                       br 
-                      a(href="https://www.nyeto.net/") Tanvi Sharma 
+                      a(href="https://www.nyeto.net/" target="blank") Tanvi Sharma 
                       br 
-                      a(href="http://kristian.bjornard.com/") Kristian Bjornard
+                      a(href="http://kristian.bjornard.com/" target="blank") Kristian Bjornard
                       br
                       a(href="https://www.instagram.com/katherine.shark/") Katherine Shark
                     .thankscol
-                      a(href="https://www.maximiliandesign.me/") Max Griffin
+                      a(href="https://www.maximiliandesign.me/" target="blank") Max Griffin
                       br 
-                      a(href="http://www.isabellevin.com/") Isabel Levin
+                      a(href="http://www.isabellevin.com/" target="blank") Isabel Levin
                       br 
-                      a(href="https://realsteve.onuniverse.com/") Steve Kistner 
+                      a(href="https://realsteve.onuniverse.com/" target="blank") Steve Kistner 
   
       div.try
         include ../templates/flame
